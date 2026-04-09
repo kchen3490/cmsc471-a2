@@ -12,6 +12,6 @@ body {
 #writeup {
     padding: 10px;
     margin-left: 1.5rem;
-    max-width: 1000px; /* just a little wider than the svg above */
+    max-width: 1100px; /* just a little wider than the svg above */
     /* border: 1px solid black; */ /* for debugging to see the border */
 }
