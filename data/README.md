@@ -1,1 +1,0 @@
-Pull text from https://github.com/BuzzFeedNews/2020-02-gentrification

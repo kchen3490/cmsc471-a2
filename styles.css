@@ -1,0 +1,17 @@
+/* Reset default styles */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0px auto;
+    line-height: 1.8;
+}
+
+body {
+    margin: 3rem;
+}
+
+#writeup {
+    padding: 10px;
+    margin-left: 1.5rem;
+    max-width: 1000px; /* just a little wider than the svg above */
+    /* border: 1px solid black; */ /* for debugging to see the border */
+}
