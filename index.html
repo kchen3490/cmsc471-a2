@@ -81,14 +81,14 @@
     <div>
       <div
         class="tableauPlaceholder"
-        id="viz1775776488153"
+        id="viz1775786743213"
         style="position: relative"
       >
         <noscript
           ><a href="#"
             ><img
               alt="Dashboard "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CM&#47;CMSC471A2BlackHat_17757759911040&#47;Dashboard&#47;1_rss.png"
+              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CM&#47;CMSC471A2WhiteHat_17757748752670&#47;Dashboard&#47;1_rss.png"
               style="border: none" /></a></noscript
         ><object class="tableauViz" style="display: none">
           <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
@@ -96,13 +96,13 @@
           <param name="site_root" value="" />
           <param
             name="name"
-            value="CMSC471A2BlackHat_17757759911040&#47;Dashboard"
+            value="CMSC471A2WhiteHat_17757748752670&#47;Dashboard"
           />
           <param name="tabs" value="no" />
           <param name="toolbar" value="yes" />
           <param
             name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CM&#47;CMSC471A2BlackHat_17757759911040&#47;Dashboard&#47;1.png"
+            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CM&#47;CMSC471A2WhiteHat_17757748752670&#47;Dashboard&#47;1.png"
           />
           <param name="animate_transition" value="yes" />
           <param name="display_static_image" value="yes" />
@@ -110,26 +110,25 @@
           <param name="display_overlay" value="yes" />
           <param name="display_count" value="yes" />
           <param name="language" value="en-US" />
-          <param name="filter" value="publish=yes" />
         </object>
       </div>
       <script type="text/javascript">
-        var divElement = document.getElementById("viz1775776488153");
+        var divElement = document.getElementById("viz1775786743213");
         var vizElement = divElement.getElementsByTagName("object")[0];
         if (divElement.offsetWidth > 800) {
           vizElement.style.minWidth = "420px";
           vizElement.style.maxWidth = "1300px";
           vizElement.style.width = "100%";
-          vizElement.style.minHeight = "127px";
-          vizElement.style.maxHeight = "997px";
-          vizElement.style.height = divElement.offsetWidth * 0.5 + "px";
+          vizElement.style.minHeight = "587px";
+          vizElement.style.maxHeight = "10027px";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
         } else if (divElement.offsetWidth > 500) {
           vizElement.style.minWidth = "420px";
           vizElement.style.maxWidth = "1300px";
           vizElement.style.width = "100%";
-          vizElement.style.minHeight = "127px";
-          vizElement.style.maxHeight = "997px";
-          vizElement.style.height = divElement.offsetWidth * 0.5 + "px";
+          vizElement.style.minHeight = "587px";
+          vizElement.style.maxHeight = "10027px";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
         } else {
           vizElement.style.width = "100%";
           vizElement.style.height = "1627px";
@@ -140,38 +139,120 @@
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
       </script>
     </div>
+    <br />
 
+    <div id="writeup">
+      <p>
+        For this assignment, we chose to analyze the
+        <a
+          href="https://github.com/BuzzFeedNews/2020-02-gentrification"
+          target="_blank"
+          >Gentrification dataset</a
+        >.
+      </p>
+    </div>
+
+    <!-- Black hat writeup -->
     <p>
-      <strong>Write-Up:</strong>
+      <strong>Black Hat Write-Up:</strong>
     </p>
     <div id="writeup">
       <p>
-        For this assignment, we chose to analyze the Gentrification dataset.
+        For the black hat, the visualization is misleading in these three
+        categories: marks/encodings, data transformation, titles/labels.
       </p>
       <br />
-      <p></p>
+      <p>
+        For encodings, the black hat color-coded the data as green for
+        gentrified and red for non-gentrified to convey the idea that
+        gentrification is good.
+      </p>
       <br />
-      <p></p>
+      <p>
+        For data transformation, the black hat uses only data from Maryland
+        because cherrypicking Maryland supports the claim that gentrification is
+        correlated with positive home value/growth, education, and income; if
+        other regions were considered in the data, it would have conflicted with
+        the idea that gentrification has benefits to quality of life.
+        Additionally, the y-axis is scaled by setting the max range to match the
+        value for the “True” bar on each graph. This was done so that the
+        gentrification would look more desirable being taller and complete if
+        the bar reaches the max for each graph.
+      </p>
       <br />
-      <p></p>
+      <p>
+        For titles/labels, the title is labeled as “The Effect of Gentrification
+        in the United States” to mislead readers into thinking the visualization
+        is unbiased and generalizable, when in reality, the data was
+        cherrypicked from Maryland. The subtext also includes something along
+        the lines of “associated with the University of Maryland” to add some
+        deceiving credibility. Also, the y-axis is ambiguously labeled, so the
+        reader cannot really tell what the metric is or how it’s aggregated
+        (i.e., amount in dollars, percent, etc and average, sum, median, etc).
+      </p>
       <br />
-      <p></p>
-      <br />
-      <p></p>
-      <br />
-      <p></p>
-      <br />
-      <p></p>
-      <br />
-      <p></p>
-      <br />
-      <p></p>
+      <p>
+        As for the visualization design, the black hat is cleanly presented to
+        appear professional, with the attribution to University of Maryland to
+        deceive the reader into thinking the black hat is even more credible.
+        The black hat has several categories to compare so that the evidence
+        appears not only more compelling but also visually attractive.
+      </p>
       <br />
     </div>
 
-    <i>Extra Credit</i>
+    <!-- White hat writeup -->
+    <p>
+      <strong>White Hat Write-Up:</strong>
+    </p>
     <div id="writeup">
-      <p></p>
+      <p>
+        For the white hat, the visualization was made as a direct counter to the
+        black hat, so that the data can directly show how the black hat is a
+        sham by having good marks/encodings, data transformation, and titles &
+        labels.
+      </p>
+      <br />
+      <p>
+        For marks/encodings, the white hat keeps the gentrified color-coding
+        with false-gentrification as red and true-gentrification as green, the
+        reason being that it would be confusing to flip the colors because the
+        white hat is attempting to counter the black ha, so it matches the
+        color-code to directly compare the height of the bars from each hat.
+      </p>
+      <br />
+      <p>
+        For data transformations, the white hat not only also looks into the
+        same home value, education, and income data as does the black hat, the
+        white hat also filters the data by clearly showing where the data is
+        coming from: cities. The cities give the reader even more information
+        and trust about where the gentrification data is coming from,
+        contrasting to the black hat, which only cherrypicks data from Maryland
+        but then claims the data is generalized from the entire United States.
+      </p>
+      <br />
+      <p>
+        For titles & labels, in order to further contrast the black hat, the
+        white hat copies the title but then italicizes the word “actually” to
+        show how this white hat actually and accurately represents the data. The
+        white hat also keeps the subtitle so that readers can still be reassured
+        of this white hat’s credibility. Furthermore, the y-axis labels are
+        accurately labeled with the unit so that the reader can know the exact
+        values of the bars instead of being ambiguously confuzzled with the
+        black hat’s improperly labeled y-axis.
+      </p>
+      <br />
+    </div>
+
+    <i>Acknowledgements</i>
+    <div id="writeup">
+      <p>
+        This assignment was completed in collaboration with Tony Zheng, Andy
+        Diep, and Kai Chen. Tony Zheng worked on the black hat; Andy Diep worked
+        on the white hat; and Kai Chen cleaned up both the hats to compile
+        together onto a GitHub page, as well as record the demo for this
+        assignment.
+      </p>
     </div>
 
     <hr />
